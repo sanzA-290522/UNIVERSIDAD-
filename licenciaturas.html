@@ -7,8 +7,23 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body id="FondoA">
+
+    
+    <div class="loader_bg">
+        <div class="loader"><img src="/imagenes/loading.gif" alt="#" /></div>
+    </div>
+    <script>
+        window.addEventListener("load", function() {
+            // Agregar un retraso de 2 segundos antes de ocultar el loader
+            setTimeout(function() {
+                document.querySelector(".loader_bg").style.display = "none";
+            }, 350); // 2000 milisegundos = 2 segundos
+        });
+    </script>
+
 
     <nav class="navbar">
         <div id="logo">
@@ -18,10 +33,10 @@
         <div class="nav-links">
             <ul class="nav-links">
                 <li><a href="inicio.html"><button class="button">Inicio</button></a></li>
-                <li><a href="#"><button class="button">Acerca de</button></a></li>
+                <li><a href="acercade.html"><button class="button">Acerca de</button></a></li>
                 <li><button class="button">Servicios</button>
                 <ul class="submenu">
-                    <li><a href="#">Licenciaturas</a></li>
+                    <li><a href="licenciaturas.html">Licenciaturas</a></li>
                     <li><a href="#">Maestrias</a></li>
                     <li><a href="#">Diplomados</a></li>
                 </ul>
@@ -32,45 +47,171 @@
 
     </nav>
 
-    <header>
-        <div class="container">
-            
-        </div>
-    </header>
-
-
-    <!--Footer-->
-    <section class="footer">
-        <div class="footer-container container">
-            <h2>Informacion</h2>
-            <div class="footer-box">
-                <h3>Enlaces Rapidos</h3>
-                <a href="#">Agencia</a>
-                <a href="#">Edificio</a>
-                <a href="#">Tarifas</a>
-            </div>
-            <div class="footer-box">
-                <h3>Locacion</h3>
-                <a href="#">Tuxtla Gutierrez</a>
-                <a href="#">Cancun</a>
-                <a href="#">Playa Del Carmen</a>
-            </div>
-            <div class="footer-box">
-                <h3>Contactos</h3>
-                <a href="#">9611320452</a>
-                <a href="#">cesar.sanchez65@unach.mx</a>
-                <div class="social">
-                    <a href="#"><i class='bx bxl-facebook' ></i></a>
-                    <a href="#"><i class='bx bxl-twitter' ></i></a>
-                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
             </div>
         </div>
-    </section>
-    <!--copyright-->
-    <div class="copyright">
-        <p>Empresa inmuebleria CJR</p>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Accordion Item #3
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Footer-->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-link">
+                <div class="link">
+                    <h3>INFORMACION</h3>
+                    <ul>
+                        <li><a href="#">Profesional Superior</a></li>
+                        <li><a href="#">Calendario Escolar</a></li>
+                        <li><a href="#">Centro de atencion Universitaria</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="link">
+                    <h3>INFORMACION</h3>
+                    <ul>
+                        <li><a href="#">Profesional Superior</a></li>
+                        <li><a href="#">Calendario Escolar</a></li>
+                        <li><a href="#">Centro de atencion Universitaria</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="link">
+                    <h3>Siguenos</h3>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                    </div>
+                    <h3>Suscribete</h3>
+                    <form id="emailForm"></form>
+                        <input type="email" id="emailInput" placeholder="Correo" required>
+                        <input class="btn" type="submit" value="Enviar">
+                    </form>
+                    <!-- Mensaje de éxito -->
+                    <p id="successMessage" class="success-message">¡Correo enviado exitosamente!</p>
+                    <script>
+                        // JavaScript para validar y limpiar el formulario al enviar
+                        document.addEventListener("DOMContentLoaded", function() {
+                            const form = document.getElementById('emailForm');
+                            const emailInput = document.getElementById('emailInput');
+                            const successMessage = document.getElementById('successMessage');
+                    
+                            form.addEventListener('submit', function(event) {
+                                event.preventDefault(); // Evita el envío tradicional del formulario
+                    
+                                const email = emailInput.value.trim();
+                    
+                                // Validación simple
+                                if (email === "") {
+                                    alert("Por favor, ingresa tu correo electrónico.");
+                                } else if (!validateEmail(email)) {
+                                    alert("Por favor, ingresa un correo electrónico válido.");
+                                } else {
+                                    // Mostrar mensaje de éxito
+                                    successMessage.style.display = "block";
+                    
+                                    // Limpiar el campo de correo
+                                    emailInput.value = "";
+                    
+                                    // Ocultar el mensaje de éxito después de 3 segundos
+                                    setTimeout(function() {
+                                        successMessage.style.display = "none";
+                                    }, 3000);
+                                }
+                            });
+                    
+                            // Función para validar el formato de correo electrónico
+                            function validateEmail(email) {
+                                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                                return re.test(email);
+                            }
+                        });
+                    </script>
+                </div>
+
+            </div>
+
+            <hr>
+            <div class="footer-text">
+                <p>Politica de privacidad</p>
+                <p>Todos los derechos reservados</p>
+            </div>
+
+        </div>
+        
+    </footer>
         
 
 </body>

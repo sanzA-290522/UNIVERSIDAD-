@@ -11,6 +11,11 @@
     text-decoration: none;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Esto evita el desplazamiento horizontal */
+}
 
 /* Quitar el estilo de lista */
 .nav-links {
@@ -19,23 +24,35 @@
     display: flex; /* Coloca los botones en línea */
     gap: 10px; /* Espacio entre botones */
 }
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-item .nav-link {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+    .button::before{
+        margin: auto;
+    }
+}
+
+
 /* Estilos generales de los botones */
 .nav-links .button {
     cursor: pointer;
     position: relative;
     padding: 5px 20px;
-    font-size: 18px;
+    font-size: 16px;
     color: rgb(221, 221, 221);  /*color de letra de la barra */
-    border: 2px solid #ffffff;  /*bordes */
-    border-radius: 34px;
+    border: 2px solid #6d7a30;  /*bordes */
+    border-radius: 25px;
     background-color: transparent;
-    font-weight: 00;
+    font-weight: 0;
     transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
     overflow: hidden;
-
+    justify-content: space-around;
 }
-<<<<<<< HEAD
-
 .nav-links.button:active {
     scale: 1;
 }
@@ -48,21 +65,20 @@
 
 }
 
-=======
-/* From Uiverse.io by gharsh11032000 */ 
+/* color del boton */ 
 .button {
     cursor: pointer;
     position: relative;
     padding: 10px 24px;
     font-size: 18px;
-    color: rgb(193, 163, 98);
-    border: 2px solid rgb(193, 163, 98);
+    color: rgb(12, 12, 12);
+    border: 2px solid rgb(5, 5, 5);
     border-radius: 34px;
     background-color: transparent;
     font-weight: 600;
     transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
     overflow: hidden;
-  }
+}
 .button::before {
     content: '';
     position: absolute;
@@ -73,27 +89,26 @@
     border-radius: inherit;
     scale: 0;
     z-index: -1;
-    background-color: rgb(193, 163, 98);
+    background-color: rgba(185, 137, 33, 0.4); /*color del fondo del boton */
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
+}
 .button:hover::before {
     scale: 3;
-  }
-  
+}
+
 .button:hover {
     color: #212121;
     scale: 1.1;
-    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
-  }
-  
+    box-shadow: 0 0px 20px rgba(185, 137, 33, 0.4);
+}
+
 .button:active {
     scale: 1;
-  }
+}
 /* Estilos de la barra de navegación */
->>>>>>> a0ae8b9e7a5109e82dff717a3c93f218af347aff
+
 .navbar {
-    background-color: #1b1c4d; /*color de la barra */
+    background-color: #2d2d33; /*color de la barra */
     color: #e7e1e1;
     display: flex;
     justify-content: space-between;
@@ -116,20 +131,10 @@
 .section {
     padding: 60px 20px;
     text-align: center;
-<<<<<<< HEAD
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-=======
-    background-color: #000000;
-    border-bottom: 1px solid #000000;
-    opacity: 0.8;
-    color: green;
->>>>>>> a0ae8b9e7a5109e82dff717a3c93f218af347aff
 }
 
 .section:nth-child(even) {
-    background-color: #b4b4b4;
+    background-color: #ffffff;
 }
 
 h1 {
@@ -144,6 +149,7 @@ h2{
 p {
     font-size: 1.2em;
     color: #000000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 ul {
     list-style-type: none;
@@ -172,7 +178,7 @@ li {
 }
 
 
-/* Estilos para el submenú */
+/* Estilos para el submenú barra cabecera */
 .submenu {
     display: none;
     position: absolute;
@@ -196,78 +202,6 @@ li {
 /* Mostrar el submenú al pasar el mouse sobre el botón */
 li:hover .submenu {
     display: block;
-}
-
-/* Estilos generales para la sección del footer */
-.footer {
-    background-color: #2c2a2a; /* Fondo oscuro */
-    color: #fff; /* Texto en blanco */
-    padding: 40px 0; /* Espaciado en la parte superior e inferior */
-    text-align: center;
-}
-
-/* Contenedor de las columnas dentro del footer */
-.footer-container {
-    display: flex;
-    justify-content: space-around; /* Distribuye las columnas uniformemente */
-    flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
-    gap: 30px;
-}
-
-/* Títulos dentro del footer */
-.footer-box h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: #00aaff; /* Color distintivo para los títulos */
-}
-
-/* Estilo para los enlaces del footer */
-.footer-box a {
-    display: block;
-    color: #fff;
-    font-size: 1rem;
-    margin-bottom: 10px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-/* Efecto hover en los enlaces */
-.footer-box a:hover {
-    color: #00aaff; /* Cambia de color al pasar el mouse */
-}
-
-/* Contenedor de los íconos sociales */
-.footer-box-social {
-    display: flex;
-    justify-content: center; /* Centra los íconos */
-    gap: 20px; /* Espaciado entre los íconos */
-    margin-top: 20px;
-}
-
-/* Estilo general para los íconos sociales */
-.footer-box-social a {
-    color: #fff; /* Color blanco para los íconos */
-    font-size: 2rem; /* Tamaño de los íconos */
-    transition: transform 0.3s ease, color 0.3s ease; /* Efecto suave de transformación */
-}
-
-/* Efecto hover para los íconos sociales */
-.footer-box-social a:hover {
-    color: #00aaff; /* Cambia el color de los íconos al azul al pasar el mouse */
-    transform: scale(1.3); /* Agranda el ícono ligeramente */
-}
-
-/* Estilos específicos para cada ícono (opcional) */
-.footer-box-social a i.bxl-facebook:hover {
-    color: #3b5998; /* Azul de Facebook */
-}
-
-.footer-box-social a i.bxl-twitter:hover {
-    color: #1da1f2; /* Azul de Twitter */
-}
-
-.footer-box-social a i.bxl-instagram:hover {
-    color: #000000; /* Rosa de Instagram */
 }
 
 
@@ -321,7 +255,7 @@ li:hover .submenu {
     line-height: 1.8;
     max-width: 800px;
     margin: 0 auto;
-    color: #ffffff;
+    color: #000000;
     
 }
 
@@ -415,4 +349,400 @@ li:hover .submenu {
     .card {
         margin-bottom: 20px;
     }
+}
+
+/*carosel*/
+.carousel-inner img {
+    height: 400px; /* Ajusta la altura según sea necesario */
+    object-fit: cover; /* Asegura que la imagen ocupe todo el espacio sin distorsionarse */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para los íconos de control */
+    border-radius: 50%; /* Redondea los íconos */
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5); /* Color personalizado para los indicadores */
+}
+
+/*licenciaturas css*/
+/* Estilo del acordeón */
+.accordion-item {
+    border: 1px solid #ddd; /* Bordes ligeros */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Espacio entre los items */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Ocultar desbordamientos */
+}
+
+/* Estilo del botón del acordeón */
+.accordion-button {
+    background-color: #d1d1d1; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+    padding: 15px; /* Relleno interno */
+    font-size: 1.2rem; /* Tamaño de letra */
+    border: none; /* Sin bordes */
+    cursor: pointer; /* Mano en lugar del cursor */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+/* Hover en el botón del acordeón */
+.accordion-button:hover {
+    background-color: rgb(61, 116, 172)120, 240), 240, 240); /* Color más oscuro al pasar el cursor */
+}
+
+/* Cuando el acordeón está abierto */
+.accordion-button:not(.collapsed) {
+    background-color: rgb(10, 11, 12); /* Color cuando está abierto */
+    transform: scale(1.02); /* Agranda ligeramente al abrir */
+}
+
+/* Estilo del contenido del acordeón */
+.accordion-body {
+    padding: 20px; /* Espacio interno */
+    background-color: #d3cccc; /* Fondo claro */
+    font-size: 1rem; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Altura de línea */
+    border-top: 1px solid #c07575; /* Borde superior */
+}
+
+/* Transición del colapso */
+.accordion-collapse {
+    transition: all 0.4s ease; /* Transición más suave al abrir/cerrar */
+}
+
+/*footer*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    padding: 100px 0 50px 0;
+    background-color: #000000;
+}
+
+.footer-link {
+    display: flex;
+}
+
+.link {
+    width: 300px;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: #d6d6d6;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.link a {
+    font-size: 17px;
+    color: #b7b8be;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.link a:hover {
+    color: #194b7c;
+}
+
+.socials {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.socials a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: #000000;
+    margin: 0 15px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.socials a:hover {
+    background-color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background-color: transparent;
+    padding: 14px;
+    outline: none;
+    border: 2px solid #b7b7cc;
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #b7b8be;
+}
+
+::placeholder {
+    color: #b7b8be;
+}
+
+.btn {
+    background-color: #08c5ff;
+    color: #ffffff;
+    border: 20px;
+}
+
+hr {
+    border: 1px solid #ffffff;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text p {
+    font-size: 15px;
+    color: #b7b8be;
+}
+
+@media(max-width:991) {
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-link {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+}
+
+
+/* Estilo del submenu */
+.submenu {
+    display: none; /* Oculto por defecto */
+    position: absolute; /* Posicionar el submenu relativo al botón */
+    top: 100%; /* Alinearlo debajo del botón */
+    left: 0; /* Alinearlo a la izquierda */
+    background-color: white; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.submenu li {
+    margin: 5px 0; /* Espaciado entre los items del submenu */
+}
+
+.submenu a {
+    color: #300b0b; /* Texto del submenu */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 0.9rem;
+}
+
+/* Mostrar el submenu cuando se pasa el cursor */
+.nav-links li:hover .submenu {
+    display: block; /* Mostrar el submenu en hover */
+}
+
+.loader_bg {
+    position: fixed;
+    z-index: 9999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader img {
+    width: 280px;
+}
+
+ul.btn {
+    float: right;
+}
+
+ul.btn li {
+    display: inline-block;
+    padding: 0 25px;
+}
+
+ul.btn li a {
+    color: #fff;
+    font-size: 16px;
+}
+
+ul.btn li:last-child {
+    padding-right: 0;
+}
+
+.section .img {
+    align-items: center;
+}
+
+
+/* Sección Acerca de */
+.about-university {
+    padding: 100px 0;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-university .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-university .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.text-content h2 {
+    font-size: 36px;
+    color: #1e90ff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.text-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.read-more-btn {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+}
+
+.read-more-btn:hover {
+    background-color: #155a8a;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+.image-content img:hover {
+    transform: scale(1.05);
+}
+
+/* Animación de Texto */
+.text-content h2::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #1e90ff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.3s ease;
+}
+
+.text-content h2:hover::after {
+    width: 120px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .text-content {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .image-content {
+        margin-top: 20px;
+    }
+}
+
+input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilo del botón de envío */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Mensaje de éxito */
+.success-message {
+    display: none;
+    color: green;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
 }

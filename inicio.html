@@ -5,32 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UNIVERSIDAD</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
-    />
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/java.js">
 </head>
-<body id="FondoA">
+<body>
+
+    <div class="loader_bg">
+        <div class="loader"><img src="/imagenes/loading.gif" alt="#" /></div>
+    </div>
+    <script>
+        window.addEventListener("load", function() {
+            // Agregar un retraso de 2 segundos antes de ocultar el loader
+            setTimeout(function() {
+                document.querySelector(".loader_bg").style.display = "none";
+            }, 1000); //  milisegundos = 2 segundos
+        });
+    </script>
+    
+
     <nav class="navbar">
     <div id="logo">
-        <img
-        src="/imagenes/imagen_logo2-removebg-preview.png" width="60"alt=""/>
+        <img src="/imagenes/imagen_logo2-removebg-preview.png" width="60"alt=""/>
     </div>
 
     <div class="nav-links">
         <ul class="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#acerca">Acerca de</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="inicio.html"><button class="button">Inicio</button></a></li>
+            <li><a href="acercade.html"><button class="button">Acerca de</button></a></li>
+            <li><button class="button">Servicios</button>
+            <ul class="submenu">
+                <li><a href="licenciaturas.html">Licenciaturas</a></li>
+                <li><a href="#">Maestrias</a></li>
+                <li><a href="#">Diplomados</a></li>
+            </ul>
+            </li>
+            <li><a href="#"><button class="button">Contactos</button></a></li>
         </ul>
     </div>
     </nav>
 
-    <header>
+
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -39,7 +58,7 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/imagenes/imagen3.jpg" class="d-block w-100" alt="...">
+                    <img src="/imagenes/imagen1.jpeg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="/imagenes/imagen7.jpg" class="d-block w-100" alt="...">
@@ -57,7 +76,16 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </header>
+    
+
+    <script>
+        var myCarousel = document.querySelector('#carouselExampleIndicators');
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 1000, // Cambia cada 2 segundos
+            ride: 'carousel'
+        });
+    </script>
+    
 
     <!-- Secciones de la página -->
 
@@ -109,6 +137,8 @@
       // Cambiar la imagen cada 5 segundos
     setInterval(changeImage, 4000);
     </script>
+    
+
 
     <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
@@ -148,41 +178,106 @@
             <div class="card">
                 <a href="#"><img src="/imagenes/ciberS.jpeg" class="card-img-top" alt="..." /></a>
                 <div class="card-body">
-                <h5 class="card-title">CIBERSEGURIDAD</h5>
-                <p class="card-text">
-                    La carrera de Ciberseguridad se enfoca en la protección de sistemas informáticos, redes, y datos frente a amenazas cibernéticas, garantizando la integridad, confidencialidad y disponibilidad de la información. Los especialistas en ciberseguridad juegan un papel fundamental en la defensa de organizaciones, gobiernos y usuarios individuales contra ataques como hackeos, malware, phishing, y otros delitos informáticos.
-                </p>
+                    <h5 class="card-title">CIBERSEGURIDAD</h5>
+                    <p class="card-text">
+                        La carrera de Ciberseguridad se enfoca en la protección de sistemas informáticos, redes, y datos frente a amenazas cibernéticas, garantizando la integridad, confidencialidad y disponibilidad de la información. Los especialistas en ciberseguridad juegan un papel fundamental en la defensa de organizaciones, gobiernos y usuarios individuales contra ataques como hackeos, malware, phishing, y otros delitos informáticos.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
-    <!--Footer-->
-    <section class="footer">
-    <div class="footer-container container">
-        <div class="footer-box">
-            <h3>Enlaces Rapidos</h3>
-            <a href="#">Agencia</a>
-            <a href="#">Edificio</a>
-            <a href="#">Tarifas</a>
-        </div>
-        <div class="footer-box">
-            <h3>Locacion</h3>
-            <a href="#">Tuxtla Gutierrez</a>
-            <a href="#">Cancun</a>
-            <a href="#">Playa Del Carmen</a>
-        </div>
-        <div class="footer-box">
-            <h3>Contactos</h3>
-            <a href="#">9611320452</a>
-            <a href="#">cesar.sanchez65@unach.mx</a>
-        </div>
-        <div class="footer-box-social">
-            <a href="#"><i class="bx bxl-facebook"></i></a>
-            <a href="#"><i class="bx bxl-twitter"></i></a>
-            <a href="#"><i class="bx bxl-instagram"></i></a>
+     <!--Footer-->
+     <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-link">
+                <div class="link">
+                    <h3>INFORMACION</h3>
+                    <ul>
+                        <li><a href="#">Profesional Superior</a></li>
+                        <li><a href="#">Calendario Escolar</a></li>
+                        <li><a href="#">Centro de atencion Universitaria</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="link">
+                    <h3>INFORMACION</h3>
+                    <ul>
+                        <li><a href="#">Profesional Superior</a></li>
+                        <li><a href="#">Calendario Escolar</a></li>
+                        <li><a href="#">Centro de atencion Universitaria</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="link">
+                    <h3>Siguenos</h3>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                    </div>
+                    <h3>Suscribete</h3>
+                    <form id="emailForm">
+                        <input type="email" id="emailInput" placeholder="Correo" required>
+                        <input class="btn" type="submit" value="Enviar">
+                    </form>
+                    <!-- Mensaje de éxito -->
+                    <p id="successMessage" class="success-message">¡Correo enviado exitosamente!</p>
+                    <script>
+                        // JavaScript para validar y limpiar el formulario al enviar
+                        document.addEventListener("DOMContentLoaded", function() {
+                            const form = document.getElementById('emailForm');
+                            const emailInput = document.getElementById('emailInput');
+                            const successMessage = document.getElementById('successMessage');
+                    
+                            form.addEventListener('submit', function(event) {
+                                event.preventDefault(); // Evita el envío tradicional del formulario
+                    
+                                const email = emailInput.value.trim();
+                    
+                                // Validación simple
+                                if (email === "") {
+                                    alert("Por favor, ingresa tu correo electrónico.");
+                                } else if (!validateEmail(email)) {
+                                    alert("Por favor, ingresa un correo electrónico válido.");
+                                } else {
+                                    // Mostrar mensaje de éxito
+                                    successMessage.style.display = "block";
+                    
+                                    // Limpiar el campo de correo
+                                    emailInput.value = "";
+                    
+                                    // Ocultar el mensaje de éxito después de 3 segundos
+                                    setTimeout(function() {
+                                        successMessage.style.display = "none";
+                                    }, 3000);
+                                }
+                            });
+                    
+                            // Función para validar el formato de correo electrónico
+                            function validateEmail(email) {
+                                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                                return re.test(email);
+                            }
+                        });
+                    </script>
+                </div>
+
             </div>
+
+            <hr>
+            <div class="footer-text">
+                <p>Politica de privacidad</p>
+                <p>Todos los derechos reservados</p>
+            </div>
+
         </div>
-    </section>
+        
+    </footer>
+
 </body>
 </html>
