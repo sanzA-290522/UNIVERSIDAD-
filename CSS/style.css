@@ -34,6 +34,7 @@
     overflow: hidden;
 
 }
+<<<<<<< HEAD
 
 .nav-links.button:active {
     scale: 1;
@@ -47,6 +48,50 @@
 
 }
 
+=======
+/* From Uiverse.io by gharsh11032000 */ 
+.button {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: rgb(193, 163, 98);
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+.button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+.button:hover::before {
+    scale: 3;
+  }
+  
+.button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  
+.button:active {
+    scale: 1;
+  }
+/* Estilos de la barra de navegación */
+>>>>>>> a0ae8b9e7a5109e82dff717a3c93f218af347aff
 .navbar {
     background-color: #1b1c4d; /*color de la barra */
     color: #e7e1e1;
@@ -71,9 +116,16 @@
 .section {
     padding: 60px 20px;
     text-align: center;
+<<<<<<< HEAD
     background: #141E30;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+=======
+    background-color: #000000;
+    border-bottom: 1px solid #000000;
+    opacity: 0.8;
+    color: green;
+>>>>>>> a0ae8b9e7a5109e82dff717a3c93f218af347aff
 }
 
 .section:nth-child(even) {
