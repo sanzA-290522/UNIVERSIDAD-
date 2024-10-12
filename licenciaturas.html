@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Acerca de la Universidad</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>UNIVERSIDAD</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body id="FondoA">
 
     
     <div class="loader_bg">
@@ -28,8 +24,7 @@
         });
     </script>
 
-    
-    <!-- Encabezado de la página -->
+
     <nav class="navbar">
         <div id="logo">
             <img src="/imagenes/imagen_logo2-removebg-preview.png" width="60" alt="">
@@ -42,8 +37,8 @@
                 <li><button class="button">Servicios</button>
                 <ul class="submenu">
                     <li><a href="licenciaturas.html">Licenciaturas</a></li>
-                    <li><a href="#">Maestrias</a></li>
-                    <li><a href="#">Diplomados</a></li>
+                    <li><a href="Maestrias.html">Maestrias</a></li>
+                    <li><a href="diplomados.html">Diplomados</a></li>
                 </ul>
                 </li>
                 <li><a href="#"><button class="button">Contactos</button></a></li>
@@ -52,73 +47,80 @@
 
     </nav>
 
-    <!-- Sección de "Acerca de la Universidad" -->
-    <!-- Sección Acerca de -->
-    <section class="about-university" id="about">
-        <div class="container">
-            <div class="content">
-                <div class="text-content">
-                    <h2>Acerca de la Universidad Internacional</h2>
-                    <p>
-                        Desde su fundación en 1985, la Universidad Internacional se ha destacado como un referente en la educación superior. Nos enorgullecemos de ofrecer una educación de alta calidad, preparando a los estudiantes para afrontar los retos de un mundo en constante evolución.
-                    </p>
-                    <p>
-                        Nuestra misión es formar profesionales íntegros, con valores sólidos y un enfoque global. Ofrecemos una amplia gama de programas académicos, apoyados por instalaciones de última tecnología y un cuerpo docente de alto nivel.
-                    </p>
-                    <div class="more-text" style="display:none;">
-                        <p>
-                            A lo largo de nuestra trayectoria, hemos formado miles de profesionales que destacan en sus respectivas áreas. Nuestro enfoque académico se basa en la innovación, la inclusión y el respeto por la diversidad, preparando a los estudiantes para ser líderes en el ámbito global.
-                        </p>
-                        <p>
-                            Invitamos a todos aquellos interesados en transformar su futuro a ser parte de nuestra comunidad universitaria, donde el aprendizaje no tiene límites.
-                        </p>
-                    </div>
-                </div>
-                <div class="image-content">
-                    <img src="imagenes/imagen5.jpg" alt="Campus Universidad Internacional">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
             </div>
-            <button class="read-more-btn">Leer Más</button>
         </div>
-    </section>
-
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const readMoreBtn = document.querySelector('.read-more-btn');
-        const moreText = document.querySelector('.more-text');
-
-        readMoreBtn.addEventListener('click', function() {
-            // Alternar la visibilidad del contenido adicional y la imagen
-            if (moreText.style.display === 'none') {
-                moreText.style.display = 'block';
-                readMoreBtn.textContent = 'Leer Menos';
-            } else {
-                moreText.style.display = 'none';
-                readMoreBtn.textContent = 'Leer Más';
-            }
-        });
-    });
-</script>
-    
-
-    <!-- Programas académicos destacados -->
-    <section class="programs">
-        <div class="container">
-            <h3>Programas Académicos</h3>
-            <ul>
-                <li><a href="#">Licenciatura en Administración de Empresas</a></li>
-                <br>
-                <li><a href="#">Licenciatura en Ingeniería Informática</a></li>
-                <br>
-                <li><a href="#">Maestría en Ciencias de la Educación</a></li>
-                <br>
-                <li><a href="#">Doctorado en Innovación y Tecnología</a></li>
-            </ul>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
         </div>
-    </section>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Pie de página -->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Accordion Item #3
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!--Footer-->
     <footer class="footer">
 
@@ -210,6 +212,7 @@
         </div>
         
     </footer>
+        
 
 </body>
 </html>
