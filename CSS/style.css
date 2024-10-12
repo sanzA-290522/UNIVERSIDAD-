@@ -165,3 +165,293 @@ p {
         display: flex;
     }
 }
+/* From Uiverse.io by akshat-patel28 */ 
+.form-container {
+    width: 350px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  
+  .title {
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 10px 0 30px 0;
+    font-size: 28px;
+    font-weight: 800;
+    color: black;
+  }
+  
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .input {
+    border-radius: 20px;
+    border: 1px solid #c0c0c0;
+    outline: 0 !important;
+    box-sizing: border-box;
+    padding: 12px 15px;
+  }
+  
+  .page-link {
+    text-decoration: underline;
+    margin: 0;
+    text-align: end;
+    color: #747474;
+    text-decoration-color: #747474;
+  }
+  
+  .page-link-label {
+    cursor: pointer;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+  }
+  
+  .page-link-label:hover {
+    color: #000;
+  }
+  
+  .form-btn {
+    padding: 10px 15px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    border: 0 !important;
+    outline: 0 !important;
+    background: teal;
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .form-btn:active {
+    box-shadow: none;
+  }
+  
+  .sign-up-label {
+    margin: 0;
+    font-size: 10px;
+    color: #747474;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  .sign-up-link {
+    margin-left: 1px;
+    font-size: 11px;
+    text-decoration: underline;
+    text-decoration-color: teal;
+    color: teal;
+    cursor: pointer;
+    font-weight: 800;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  .buttons-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 15px;
+  }
+  
+  .apple-login-button,
+      .google-login-button {
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 11px;
+    gap: 5px;
+  }
+  
+  .apple-login-button {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+  }
+  
+  .google-login-button {
+    border: 2px solid #747474;
+  }
+  
+  .apple-icon,
+      .google-icon {
+    font-size: 18px;
+    margin-bottom: 1px;
+  }
+  #FondoL{
+    background-image: url(/imagenes/FondoL2.png);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  #FondoE{
+    background-color: #FF8225;
+    background-image: url(/imagenes/Principal.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  #General{
+    width: 1000px;
+    height: 450px;
+    background-color: black;
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    margin: 0%;
+    margin-top: 20px;
+    opacity: 0.8;
+    color: white;
+    margin-left: 20px;
+  }
+
+  #Viñetas{
+    width: 350px;
+    height: 500px;
+    background-color: black;
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    margin-inline-start: 5%;
+    margin-top: 30px;
+    opacity: 0.8;
+    color: white;
+    float: left;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1); /* Agregamos la transición para que el efecto sea suave */
+  }
+  #Viñetas:hover{
+    transform: translateY(-10px); /* Levanta el contenedor 10px */
+    box-shadow: rgb(255, 255, 255) 0px 10px 25px; /* Agrega una sombra más oscura y profunda */
+    opacity: 1; /* Aumenta la opacidad para darle más brillo */
+  }
+  .buttonP{
+    background-image: url(/imagenes/Perfil.png);
+    background-size: cover;
+    width: 35px; /* ancho del botón */
+    height: 35px; /* alto del botón */
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 7px;
+    margin-right: 10px;
+  }
+  .buttonC{
+    background-image: url(/imagenes/Chat.png);
+    background-size: cover;
+    width: 30px; /* ancho del botón */
+    height: 30px; /* alto del botón */
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 9px;
+  }
+  .buttonN{
+    background-image: url(/imagenes/Notificación.png);
+    background-size: cover;
+    width: 25px; /* ancho del botón */
+    height: 25px; /* alto del botón */
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .buttonPD{
+    background-image: url(/imagenes/Perfil.png);
+    background-size: cover;
+    width: 35px; /* ancho del botón */
+    height: 35px; /* alto del botón */
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 7px;
+    margin-right: 10px;
+  }
+  .buttonCD{
+    background-image: url(/imagenes/Chat.png);
+    background-size: cover;
+    width: 30px; /* ancho del botón */
+    height: 30px; /* alto del botón */
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 9px;
+  }
+  .buttonND{
+    background-image: url(/imagenes/Notificación.png);
+    background-size: cover;
+    width: 25px; /* ancho del botón */
+    height: 25px; /* alto del botón */
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  #MateriasD{
+    width: 1000px;
+    height: 450px;
+    background-color: black;
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    margin: 0%;
+    margin-top: 20px;
+    opacity: 0.8;
+    color: white;
+    margin-left: 20px;
+  }
+  #TareasD{
+    width: 1200px;
+    height: 450px;
+    background-color: black;
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    margin: 0%;
+    margin-top: 20px;
+    opacity: 0.8;
+    color: white;
+    margin-left: 20px;
+  }
+  /* Oculta el checkbox */
+#show-chat-checkbox {
+  display: none;
+}
+
+/* Oculta el chat por defecto */
+.chat-container {
+  display: none;
+}
+
+/* Muestra el chat cuando el checkbox está seleccionado */
+#show-chat-checkbox:checked + label + .chat-container {
+  display: block;
+}
