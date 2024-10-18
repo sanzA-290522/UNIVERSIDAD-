@@ -16,7 +16,7 @@
 <body>
 
     <div class="loader_bg">
-        <div class="loader"><img src="/imagenes/loading.gif" alt="#" /></div>
+        <div class="loader"><img src="imagenes/loading.gif" alt="#" /></div>
     </div>
     <script>
         window.addEventListener("load", function() {
@@ -30,18 +30,19 @@
 
     <nav class="navbar">
     <div id="logo">
-        <img src="/imagenes/imagen_logo2-removebg-preview.png" width="60"alt=""/>
+        <img src="imagenes/imagen_logo2-removebg-preview.png" width="60"alt=""/>
     </div>
 
     <div class="nav-links">
         <ul class="nav-links">
-            <li><a href="inicio.html"><button class="button">Inicio</button></a></li>
-            <li><a href="acercade.html"><button class="button">Acerca de</button></a></li>
+            <li><a href="inicio.php"><button class="button">Inicio</button></a></li>
+            <li><a href="acercade.php"><button class="button">Acerca de</button></a></li>
             <li><button class="button">Servicios</button>
             <ul class="submenu">
-                <li><a href="licenciaturas.html">Licenciaturas</a></li>
-                <li><a href="#">Maestrias</a></li>
+                <li><a href="licenciaturas.php">Licenciaturas</a></li>
+                <li><a href="maestrias.php">Maestrias</a></li>
                 <li><a href="#">Diplomados</a></li>
+                <li><a href="login.php">Login</a></li>
             </ul>
             </li>
             <li><a href="#"><button class="button">Contactos</button></a></li>
@@ -58,13 +59,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/imagenes/imagen1.jpeg" class="d-block w-100" alt="...">
+                    <img src="imagenes/imagen1.jpeg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="/imagenes/imagen7.jpg" class="d-block w-100" alt="...">
+                    <img src="imagenes/imagen7.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="/imagenes/imagen 4.jpeg" class="d-block w-100" alt="...">
+                    <img src="imagenes/imagen 4.jpeg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -143,18 +144,18 @@
     <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
             <div class="card">
-                <img src="/imagenes/ing civil.jpg" class="card-img-top" alt="..." />
+                <a href="#"><img src="imagenes/ing civil.jpg" class="card-img-top" alt="..." /></a>
                 <div class="card-body">
-            <h5 class="card-title">ING. CIVIL</h5>
-            <p class="card-text">
-                Los estudiantes de Ingeniería Civil adquieren conocimientos en matemáticas, física, mecánica de suelos, resistencia de materiales, y gestión de proyectos, desarrollando habilidades para resolver problemas complejos y crear soluciones innovadoras que mejoren la calidad de vida de las personas.
-            </p>
+                    <h5 class="card-title">ING. CIVIL</h5>
+                    <p class="card-text">
+                        Los estudiantes de Ingeniería Civil adquieren conocimientos en matemáticas, física, mecánica de suelos, resistencia de materiales, y gestión de proyectos, desarrollando habilidades para resolver problemas complejos y crear soluciones innovadoras que mejoren la calidad de vida de las personas.
+                    </p>
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
         <div class="col">
             <div class="card">
-                <a href="#"><img src="/imagenes/arquitec.jpeg" class="card-img-top" alt="..." /></a>
+                <a href="#"><img src="imagenes/arquitec.jpeg" class="card-img-top" alt="..." /></a>
             <div class="card-body">
                 <h5 class="card-title">ARQUITECTURA</h5>
                 <p class="card-text">
@@ -165,7 +166,7 @@
     </div>
         <div class="col">
             <div class="card">
-                <a href="#"><img src="/imagenes/admi.jpg" class="card-img-top" alt="..." /></a>
+                <a href="#"><img src="imagenes/admi.jpg" class="card-img-top" alt="..." /></a>
             <div class="card-body">
                 <h5 class="card-title">ADMINISTRACION DE EMPRESAS</h5>
                 <p class="card-text">
@@ -176,7 +177,7 @@
     </div>
         <div class="col">
             <div class="card">
-                <a href="#"><img src="/imagenes/ciberS.jpeg" class="card-img-top" alt="..." /></a>
+                <a href="#"><img src="imagenes/ciberS.jpeg" class="card-img-top" alt="..." /></a>
                 <div class="card-body">
                     <h5 class="card-title">CIBERSEGURIDAD</h5>
                     <p class="card-text">
@@ -187,58 +188,57 @@
         </div>
     </div>
 
-     <!--Footer-->
-     <footer class="footer">
-
+      <!-- Footer -->
+      <footer class="footer">
         <div class="container">
-
-            <div class="footer-link">
-                <div class="link">
-                    <h3>INFORMACION</h3>
+            <div class="footer-link d-flex justify-content-between flex-wrap">
+                <!-- Información 1 -->
+                <div class="link mb-4">
+                    <h3>INFORMACIÓN</h3>
                     <ul>
                         <li><a href="#">Profesional Superior</a></li>
                         <li><a href="#">Calendario Escolar</a></li>
-                        <li><a href="#">Centro de atencion Universitaria</a></li>
+                        <li><a href="#">Centro de Atención Universitaria</a></li>
                     </ul>
-
                 </div>
 
-                <div class="link">
-                    <h3>INFORMACION</h3>
+                <!-- Información 2 -->
+                <div class="link mb-4">
+                    <h3>INFORMACIÓN</h3>
                     <ul>
                         <li><a href="#">Profesional Superior</a></li>
                         <li><a href="#">Calendario Escolar</a></li>
-                        <li><a href="#">Centro de atencion Universitaria</a></li>
+                        <li><a href="#">Centro de Atención Universitaria</a></li>
                     </ul>
-
                 </div>
 
-                <div class="link">
-                    <h3>Siguenos</h3>
-                    <div class="socials">
+                <!-- Redes Sociales y Suscripción -->
+                <div class="link mb-4">
+                    <h3>Síguenos</h3>
+                    <div class="socials mb-3">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
                     </div>
-                    <h3>Suscribete</h3>
+                    <h3>Suscríbete</h3>
                     <form id="emailForm">
-                        <input type="email" id="emailInput" placeholder="Correo" required>
-                        <input class="btn" type="submit" value="Enviar">
+                        <input type="email" id="emailInput" placeholder="Correo" required class="form-control mb-2">
+                        <input class="btn btn-light" type="submit" value="Enviar">
                     </form>
                     <!-- Mensaje de éxito -->
                     <p id="successMessage" class="success-message">¡Correo enviado exitosamente!</p>
                     <script>
                         // JavaScript para validar y limpiar el formulario al enviar
-                        document.addEventListener("DOMContentLoaded", function() {
+                        document.addEventListener("DOMContentLoaded", function () {
                             const form = document.getElementById('emailForm');
                             const emailInput = document.getElementById('emailInput');
                             const successMessage = document.getElementById('successMessage');
-                    
-                            form.addEventListener('submit', function(event) {
+
+                            form.addEventListener('submit', function (event) {
                                 event.preventDefault(); // Evita el envío tradicional del formulario
-                    
+
                                 const email = emailInput.value.trim();
-                    
+
                                 // Validación simple
                                 if (email === "") {
                                     alert("Por favor, ingresa tu correo electrónico.");
@@ -247,17 +247,17 @@
                                 } else {
                                     // Mostrar mensaje de éxito
                                     successMessage.style.display = "block";
-                    
+
                                     // Limpiar el campo de correo
                                     emailInput.value = "";
-                    
+
                                     // Ocultar el mensaje de éxito después de 3 segundos
-                                    setTimeout(function() {
+                                    setTimeout(function () {
                                         successMessage.style.display = "none";
                                     }, 3000);
                                 }
                             });
-                    
+
                             // Función para validar el formato de correo electrónico
                             function validateEmail(email) {
                                 const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -266,17 +266,14 @@
                         });
                     </script>
                 </div>
-
             </div>
 
-            <hr>
-            <div class="footer-text">
-                <p>Politica de privacidad</p>
-                <p>Todos los derechos reservados</p>
+            <hr class="my-4">
+            <div class="footer-text text-center">
+                <p>Política de privacidad</p>
+                <p>Todos los derechos reservados © 2024 Universidad.</p>
             </div>
-
         </div>
-        
     </footer>
 
 </body>

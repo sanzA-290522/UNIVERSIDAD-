@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesión</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body id="FondoL">
+    <div class="form-container-R">
+        <p class="title">Regístrate</p>
+        <form class="form">
+            <input type="Nombres" class="input" placeholder="Nombre">
+            <input type="Apellido" class="input" placeholder="Apellido">
+            <input type="email" class="input" placeholder="Correo electrónico">
+            <input type="password" class="input" placeholder="Contraseña">
+            <button class="form-btn-R">Registrar</button>
+            <p class="sign-up-label">¿Ya tienes cuenta?<a class="sign-up-link" href="/Login.html">Inicia sesión</a>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
