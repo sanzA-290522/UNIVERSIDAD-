@@ -42,10 +42,10 @@ body, html {
 .nav-links .button {
     cursor: pointer;
     position: relative;
-    padding: 5px 20px;
+    padding: 5px 15px;
     font-size: 16px;
     color: rgb(221, 221, 221);  /*color de letra de la barra */
-    border: 2px solid #181717;  /*bordes */
+    border: 1px solid #2d2d33;  /*bordes */
     border-radius: 25px;
     background-color: transparent;
     font-weight: 0;
@@ -61,7 +61,7 @@ body, html {
 .nav-links .button:hover {
     color: #f8f8f8;
     scale: 1.1;
-    box-shadow: 0 0px 20px rgba(255, 246, 227, 0.4);
+    box-shadow: 0 0px 20px #a2a2a3;
 
 }
 
@@ -71,9 +71,9 @@ body, html {
     position: relative;
     padding: 10px 24px;
     font-size: 18px;
-    color: rgb(12, 12, 12);
-    border: 2px solid rgb(5, 5, 5);
-    border-radius: 34px;
+    color: rgb(8, 8, 8);
+    border: 2px #2d2d33;
+    border-radius: 25px;
     background-color: transparent;
     font-weight: 600;
     transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
@@ -89,7 +89,7 @@ body, html {
     border-radius: inherit;
     scale: 0;
     z-index: -1;
-    background-color: rgba(172, 172, 172, 0.4); /*color del fondo del boton */
+    background-color: #2d2d33; /*color del fondo del boton */
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 .button:hover::before {
@@ -99,7 +99,6 @@ body, html {
 .button:hover {
     color: #212121;
     scale: 1.1;
-    box-shadow: 0 0px 20px rgba(134, 120, 88, 0.4);
 }
 
 .button:active {
@@ -493,7 +492,67 @@ hr {
     }
 }
 
+/* Estilo del menú principal */
+.menu {
+    position: relative;
+    display: inline-block;
+}
 
+.menu-item {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Estilo del submenú */
+.submenu-maestrias {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 100%; /* Justo debajo del menú principal */
+    left: 0;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    min-width: 200px;
+}
+
+.submenu-maestrias li {
+    padding: 10px;
+}
+
+.submenu-maestrias li a {
+    text-decoration: none;
+    color: #555;
+    display: block;
+    transition: color 0.3s;
+}
+
+.submenu-maestrias li a:hover {
+    color: #0073e6;
+}
+
+/* Mostrar el submenú cuando se pasa el cursor sobre el menú principal */
+.menu:hover .submenu-maestrias {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 /* Estilo del submenu */
 .submenu {
     display: none; /* Oculto por defecto */
@@ -511,7 +570,7 @@ hr {
 }
 
 .submenu a {
-    color: #300b0b; /* Texto del submenu */
+    color: #000000; /* Texto del submenu */
     text-decoration: none; /* Sin subrayado */
     font-size: 0.9rem;
 }
@@ -528,7 +587,7 @@ hr {
     width: 100%;
     height: 100%;
 }
-
+/*carga del gif*/
 .loader {
     height: 100%;
     width: 100%;
@@ -1020,15 +1079,13 @@ input[type="email"]:focus {
     font-weight: 800;
     color: black;
 }
-  
 .form {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 18px;
     margin-bottom: 15px;
-}
-  
+} 
 .input {
     border-radius: 20px;
     border: 1px solid #c0c0c0;
@@ -1115,4 +1172,134 @@ input[type="email"]:focus {
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+/** portfolio section **/
+
+.portfolio {
+    padding-top: 90px;
+}
+
+.portfolio .titlepage {
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+.portfolio .titlepage h2 {
+    color: #040300;
+}
+
+.portfolio .titlepage span {
+    color: #040300;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.portfolio .titlepage p {
+    color: #434343;
+    font-size: 17px;
+    line-height: 28px;
+    padding-top: 15px;
+}
+
+.portfolio .portfolio_Carousel .carousel-caption {
+    position: inherit;
+    padding: 0;
+}
+
+.portfolio_box {
+    text-align: center;
+    position: relative;
+}
+
+.portfolio_img {
+    margin-bottom: 30px;
+}
+
+.middle:hover {
+    opacity: 1;
+    z-index: 9999;
+}
+
+.middle {
+    z-index: 9999;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #ebd93cc2;
+    width: 90%;
+    height: 92%;
+}
+
+.text2 {
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+    padding: 7px 0px;
+     width: 144px;
+    margin-top: 50% !important;
+    display: block;
+    margin: 0 auto;
+    border: #fff solid 2px;
+}
+
+.portfolio_Carousel .carousel-indicators {
+    display: none;
+}
+
+#myCarousel a.carousel-control-prev {
+    position: absolute;
+    left: 20px;
+}
+
+#myCarousel a.carousel-control-next {
+    right: 20px;
+    position: absolute;
+}
+
+#myCarousel .carousel-control-next,
+#myCarousel .carousel-control-prev {
+    width: 60px;
+    height: 60px;
+    background: #29426c;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    top: 42%;
+    border-radius: 30px;
+}
+
+#myCarousel .carousel-control-prev:hover,
+#myCarousel .carousel-control-next:hover,
+#myCarousel .carousel-control-prev:focus,
+#myCarousel .carousel-control-next:focus {
+    background: #f2db18;
+    color: #fff;
+}
+
+.portfolio .read_more {
+    color: #f2db18 !important;
+    margin: 0 auto;
+    max-width: 140px;
+    width: 100%;
+    display: block;
+    display: table;
+    margin-top: 40px;
+}
+
+.portfolio .read_more::before {
+    border-right: #f2db18 solid 1px;
+    border-right-width: 1px;
+    border-width: 90px;
+}
+
+
+/** end portfolio section **/
 
